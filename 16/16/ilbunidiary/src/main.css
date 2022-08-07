@@ -1,0 +1,9 @@
+body {
+	overflow: hidden; /*클릭하고 드래그하면서 움직일때 스크롤 되지 않게*/
+	margin: 0;
+}
+#three-canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+}

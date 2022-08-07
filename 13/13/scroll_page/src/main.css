@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+}
+#three-canvas {
+	position: fixed;  /*스크롤 내려도 scene 화면은 고정적이게*/
+	left: 0;
+	top: 0;
+}
+.sections
+{
+	 position : relative;  	/* absolute보다 위에 써지게 */
+	 z-index: 1;
+}
+.section{
+	box-sizing: border-box;  /*padding이 추가되었기때문에 그 사이즈를 추가하는게 아니라 기존 100크기안에서 넣어주게 만들어줌*/
+	padding: 5rem;
+	height: 100vh;  /* 브라우저 높이만큼 숫자들 세팅  */
+}
+.section h2 {
+	margin: 0;
+	font-size: 10vmin;  /* 폰으로 볼때도 유연하게 적용되게 */
+}
+.section:nth-child(odd){   /*짝수는 even 홀수는 odd*/
+	text-align: right;
+}
